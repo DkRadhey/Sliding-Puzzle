@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #e6e6e6;
+    font-family: "Poppins", sans-serif;
+    overflow: hidden;
+}
+
+.main {
+    width: 50vw;
+    height: 98vh;
+    margin: auto 2rem;
+    padding: 48px 96px;
+    background-color: #777;
+    border-radius: 12px;
+    margin: auto;
+    box-shadow: 0.4rem 0.4rem 1rem rgb(44, 43, 43),
+        -0.4rem -0.4rem 1rem rgb(172, 172, 172);
+}
+
+.heading {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 24px;
+    text-shadow: 0.2rem 0.2rem 0.5rem #ccc, -0.2rem -0.2rem 0.5rem #fff;
+}
+
+.puzzle-container {
+    width: 364px;
+    height: 364px;
+    background-color: #e6e6e6;
+    overflow: hidden;
+    box-shadow: 0.4rem 0.4rem 1rem #ccc, -0.4rem -0.4rem 1rem #fff;
+    border-radius: 8px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    overflow: hidden;
+}
+
+.moves {
+    color: beige;
+    text-shadow: 0.2rem 0.2rem 0.5rem #ccc, -0.2rem -0.2rem 0.5rem #fff;
+    font-size: 24px;
+    margin-top: 18px;
+    text-align: center;
+}
+
+#reset-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    width: 130px;
+    padding: 12px;
+    font-family: "Poppins", sans-serif;
+    background: transparent;
+    border: 1px solid #dfdada;
+    border-radius: 8px;
+    box-shadow: 0.4rem 0.4rem 1rem #ccc, -0.4rem -0.4rem 1rem #fff;
+}
+
+#reset-btn:hover {
+    box-shadow: -0.4rem -0.4rem 1rem #fff inset, 0.4rem 0.4rem 1rem #777 inset;
+}
+
+@media only screen and (max-width: 600px) {
+    .main {
+        width: 90vw;
+        margin: auto;
+        padding: 48px 0px;
+    }
+
+    .heading {
+        font-size: 36px;
+    }
+
+    .puzzle-container {
+        width: 264px !important;
+        height: 264px !important;
+    }
+
+    .puzzle-container img {
+        width: 88px !important;
+        height: 88px !important;
+    }
+
+    #reset-btn {
+        top: 66% !important;
+        right: 35% !important;
+    }
+}
+
+@media only screen and (max-width: 1040px) {
+    .main {
+        width: 90vw;
+        margin: auto;
+        padding: 48px 0px;
+    }
+
+    .heading {
+        font-size: 36px;
+    }
+
+    .puzzle-container {
+        width: 364px;
+        height: 364px;
+    }
+
+    /* .puzzle-container img {
+        width: 88px;
+        height: 88px;
+    } */
+
+    #reset-btn {
+        top: 56%;
+        right: 44%;
+    }
+}
